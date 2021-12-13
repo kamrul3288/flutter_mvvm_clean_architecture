@@ -6,7 +6,6 @@ import 'package:provider/provider.dart';
 
 class Routes {
   static const String homeScreenRoute = "/";
-  static const String postDetailsRoute = "/postDetailsRoute";
 }
 
 class RouteGenerator {

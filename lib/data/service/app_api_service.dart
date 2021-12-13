@@ -7,9 +7,5 @@ Uri _parseUrl(String url) => Uri.parse(url);
 abstract class AppApiService {
   final baseUrl = AppConstant.baseUrl;
 
-  Future<Response> postListApi() =>
-      http.get(_parseUrl("$baseUrl/posts"));
-
-  Future<Response> postDetailsApi(int postId) =>
-      http.get(_parseUrl("$baseUrl/posts/$postId"));
+  Future<Response> postListApi() => http.get(_parseUrl("$baseUrl/posts"));
 }
